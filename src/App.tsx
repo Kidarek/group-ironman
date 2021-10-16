@@ -5,7 +5,9 @@ import PlayerStats from './Components/PlayerStats';
 function App() {
   return (
     <div className="App">
-      <PlayerStats></PlayerStats>
+      <PlayerStats name = 'RangingThief'></PlayerStats>
+      <PlayerStats name = 'ArgonianLord'></PlayerStats>
+      <PlayerStats name = 'LustyLesbian'></PlayerStats>
     </div>
   );
 }
