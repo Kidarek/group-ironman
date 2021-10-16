@@ -39,4 +39,13 @@
 
 table {
   display: inline-block;
+  border: 1px solid black;
+}
+
+td {
+  text-align: left;
+}
+
+td img {
+  height: 15px;
 }
