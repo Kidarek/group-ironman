@@ -1,0 +1,104 @@
+import * as React from "react"
+import { useEffect, useState, useRef } from "react"
+
+function PlayerStats(): JSX.Element {
+
+    return (
+        <table>
+            <tr>
+                <td>Attack</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Strength</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Defence</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ranged</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Prayer</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Magic</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Runecrafting</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Construction</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Hitpoints</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Agility</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Herblore</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Thieving</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Crafting</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Fletching</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Slayer</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Hunting</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Mining</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Smithing</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Fishing</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Cooking</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Firemaking</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Woodcutting</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Farming</td>
+                <td></td>
+            </tr>
+        </table>
+    )
+}
+
+export default PlayerStats
