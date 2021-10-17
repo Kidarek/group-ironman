@@ -9,30 +9,6 @@ interface PlayerProps {
 let loaded = false
 
 function PlayerStats(props: PlayerProps): JSX.Element {
-    const [attack, setAttack] = React.useState(0)
-    const [strength, setStrength] = React.useState(0)
-    const [defence, setDefence] = React.useState(0)
-    const [ranged, setRanged] = React.useState(0)
-    const [prayer, setPrayer] = React.useState(0)
-    const [magic, setMagic] = React.useState(0)
-    const [runecraft, setRunecraft] = React.useState(0)
-    const [construction, setConstruction] = React.useState(0)
-    const [hitpoints, setHitpoints] = React.useState(0)
-    const [agility, setAgility] = React.useState(0)
-    const [herblore, setHerblore] = React.useState(0)
-    const [thieving, setThieving] = React.useState(0)
-    const [crafting, setCrafting] = React.useState(0)
-    const [fletching, setFletching] = React.useState(0)
-    const [slayer, setSlayer] = React.useState(0)
-    const [hunter, setHunter] = React.useState(0)
-    const [mining, setMining] = React.useState(0)
-    const [smithing, setSmithing] = React.useState(0)
-    const [fishing, setFishing] = React.useState(0)
-    const [cooking, setCooking] = React.useState(0)
-    const [firemaking, setFiremaking] = React.useState(0)
-    const [woodcutting, setWoodcutting] = React.useState(0)
-    const [farming, setFarming] = React.useState(0)
-
     const [stats, setStats] = React.useState({
         attack: 0,
         strength: 0,
