@@ -10,6 +10,7 @@ let loaded = false
 
 function PlayerStats(props: PlayerProps): JSX.Element {
     const [stats, setStats] = React.useState({
+        totalLevel: 0,
         attack: 0,
         strength: 0,
         defence: 0,
@@ -48,6 +49,7 @@ function PlayerStats(props: PlayerProps): JSX.Element {
         const stats = data.stats
 
         setStats({
+            totalLevel: stats.overall.level,
             attack: stats.attack.level,
             strength: stats.strength.level,
             defence: stats.defence.level,
@@ -78,7 +80,8 @@ function PlayerStats(props: PlayerProps): JSX.Element {
         <Table>
             <TableHead>
                 <TableRow>
-                    <TableCell>{props.name}</TableCell>    
+                    <TableCell>{props.name}</TableCell>
+                    <TableCell>{stats.totalLevel}</TableCell>
                 </TableRow>
             </TableHead>
             <TableBody>
