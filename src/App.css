@@ -37,7 +37,7 @@
   }
 }
 
-table.css-1puexzi-MuiTable-root {
+div.App table {
   display: inline-block;
   width: initial;
   padding-left: 18px;
@@ -49,6 +49,6 @@ table img {
   vertical-align: middle;
 }
 
-table tbody .css-1ijrop1-MuiTableCell-root {
+div.App table tbody {
   padding: 12px;
 }
