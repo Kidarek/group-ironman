@@ -37,16 +37,18 @@
   }
 }
 
-table {
+table.css-1puexzi-MuiTable-root {
   display: inline-block;
-  border: 1px solid black;
-  background-color: #3A3A3D;
+  width: initial;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
-td {
-  text-align: left;
+table img {
+  height: 17px;
+  vertical-align: middle;
 }
 
-td img {
-  height: 15px;
+table tbody .css-1ijrop1-MuiTableCell-root {
+  padding: 12px;
 }

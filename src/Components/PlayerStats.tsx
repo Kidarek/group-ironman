@@ -1,3 +1,4 @@
+import { Table, TableBody, TableCell, TableHead, TableRow } from "@mui/material"
 import * as React from "react"
 import { useEffect } from "react"
 
@@ -66,7 +67,7 @@ function PlayerStats(props: PlayerProps): JSX.Element {
         if (loaded) {
             return
         }
-        const response = await fetch('https://ash6xz4rbe.execute-api.us-east-2.amazonaws.com/default/OSRS-Tools-Wrapper')
+        const response = await fetch('https://ash6xz4rbe.execute-api.us-east-2.amazonaws.com/default/OSRS-Tools-Wrapper?name=' + props.name)
         const data = await response.json()
         const stats = data.stats
 
@@ -98,108 +99,108 @@ function PlayerStats(props: PlayerProps): JSX.Element {
         loaded = true
     }
     return (
-        <table>
-            <thead>
-                <tr>
-                    <td>{props.name}</td>    
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Attack_icon.png'/> Attack</td>
-                    <td>{stats.attack}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Strength_icon.png'/> Strength</td>
-                    <td>{stats.strength}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Defence_icon.png'/> Defence</td>
-                    <td>{stats.defence}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Ranged_icon.png'/> Ranged</td>
-                    <td>{stats.ranged}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Prayer_icon.png'/> Prayer</td>
-                    <td>{stats.prayer}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Magic_icon.png'/> Magic</td>
-                    <td>{stats.magic}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Runecraft_icon.png'/> Runecraft</td>
-                    <td>{stats.runecraft}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Construction_icon.png'/> Construction</td>
-                    <td>{stats.construction}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Hitpoints_icon.png'/> Hitpoints</td>
-                    <td>{stats.hitpoints}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Agility_icon.png'/> Agility</td>
-                    <td>{stats.agility}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Herblore_icon.png'/> Herblore</td>
-                    <td>{stats.herblore}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Thieving_icon.png'/> Thieving</td>
-                    <td>{stats.thieving}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Crafting_icon.png'/> Crafting</td>
-                    <td>{stats.crafting}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Fletching_icon.png'/> Fletching</td>
-                    <td>{stats.fletching}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Slayer_icon.png'/> Slayer</td>
-                    <td>{stats.slayer}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Hunter_icon.png'/> Hunter</td>
-                    <td>{stats.hunter}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Mining_icon.png'/> Mining</td>
-                    <td>{stats.mining}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Smithing_icon.png'/> Smithing</td>
-                    <td>{stats.smithing}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Fishing_icon.png'/> Fishing</td>
-                    <td>{stats.fishing}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Cooking_icon.png'/> Cooking</td>
-                    <td>{stats.cooking}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Firemaking_icon.png'/> Firemaking</td>
-                    <td>{stats.firemaking}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Woodcutting_icon.png'/> Woodcutting</td>
-                    <td>{stats.woodcutting}</td>
-                </tr>
-                <tr>
-                    <td><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Farming_icon.png'/> Farming</td>
-                    <td>{stats.farming}</td>
-                </tr>
-            </tbody>
+        <Table>
+            <TableHead>
+                <TableRow>
+                    <TableCell>{props.name}</TableCell>    
+                </TableRow>
+            </TableHead>
+            <TableBody>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Attack_icon.png'/> Attack</TableCell>
+                    <TableCell>{stats.attack}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Strength_icon.png'/> Strength</TableCell>
+                    <TableCell>{stats.strength}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Defence_icon.png'/> Defence</TableCell>
+                    <TableCell>{stats.defence}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Ranged_icon.png'/> Ranged</TableCell>
+                    <TableCell>{stats.ranged}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Prayer_icon.png'/> Prayer</TableCell>
+                    <TableCell>{stats.prayer}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Magic_icon.png'/> Magic</TableCell>
+                    <TableCell>{stats.magic}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Runecraft_icon.png'/> Runecraft</TableCell>
+                    <TableCell>{stats.runecraft}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Construction_icon.png'/> Construction</TableCell>
+                    <TableCell>{stats.construction}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Hitpoints_icon.png'/> Hitpoints</TableCell>
+                    <TableCell>{stats.hitpoints}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Agility_icon.png'/> Agility</TableCell>
+                    <TableCell>{stats.agility}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Herblore_icon.png'/> Herblore</TableCell>
+                    <TableCell>{stats.herblore}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Thieving_icon.png'/> Thieving</TableCell>
+                    <TableCell>{stats.thieving}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Crafting_icon.png'/> Crafting</TableCell>
+                    <TableCell>{stats.crafting}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Fletching_icon.png'/> Fletching</TableCell>
+                    <TableCell>{stats.fletching}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Slayer_icon.png'/> Slayer</TableCell>
+                    <TableCell>{stats.slayer}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Hunter_icon.png'/> Hunter</TableCell>
+                    <TableCell>{stats.hunter}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Mining_icon.png'/> Mining</TableCell>
+                    <TableCell>{stats.mining}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Smithing_icon.png'/> Smithing</TableCell>
+                    <TableCell>{stats.smithing}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Fishing_icon.png'/> Fishing</TableCell>
+                    <TableCell>{stats.fishing}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Cooking_icon.png'/> Cooking</TableCell>
+                    <TableCell>{stats.cooking}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Firemaking_icon.png'/> Firemaking</TableCell>
+                    <TableCell>{stats.firemaking}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Woodcutting_icon.png'/> Woodcutting</TableCell>
+                    <TableCell>{stats.woodcutting}</TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Farming_icon.png'/> Farming</TableCell>
+                    <TableCell>{stats.farming}</TableCell>
+                </TableRow>
+            </TableBody>
             
-        </table>
+        </Table>
     )
 }
 
