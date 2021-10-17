@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/gimp-stats/static/css/main.b17a8727.chunk.css",
-    "main.js": "/gimp-stats/static/js/main.6fc04c74.chunk.js",
-    "main.js.map": "/gimp-stats/static/js/main.6fc04c74.chunk.js.map",
+    "main.js": "/gimp-stats/static/js/main.e80f0404.chunk.js",
+    "main.js.map": "/gimp-stats/static/js/main.e80f0404.chunk.js.map",
     "runtime-main.js": "/gimp-stats/static/js/runtime-main.7b2e4b23.js",
     "runtime-main.js.map": "/gimp-stats/static/js/runtime-main.7b2e4b23.js.map",
-    "static/js/2.41366c91.chunk.js": "/gimp-stats/static/js/2.41366c91.chunk.js",
-    "static/js/2.41366c91.chunk.js.map": "/gimp-stats/static/js/2.41366c91.chunk.js.map",
+    "static/js/2.bd47fff7.chunk.js": "/gimp-stats/static/js/2.bd47fff7.chunk.js",
+    "static/js/2.bd47fff7.chunk.js.map": "/gimp-stats/static/js/2.bd47fff7.chunk.js.map",
     "index.html": "/gimp-stats/index.html",
     "static/css/main.b17a8727.chunk.css.map": "/gimp-stats/static/css/main.b17a8727.chunk.css.map",
-    "static/js/2.41366c91.chunk.js.LICENSE.txt": "/gimp-stats/static/js/2.41366c91.chunk.js.LICENSE.txt"
+    "static/js/2.bd47fff7.chunk.js.LICENSE.txt": "/gimp-stats/static/js/2.bd47fff7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7b2e4b23.js",
-    "static/js/2.41366c91.chunk.js",
+    "static/js/2.bd47fff7.chunk.js",
     "static/css/main.b17a8727.chunk.css",
-    "static/js/main.6fc04c74.chunk.js"
+    "static/js/main.e80f0404.chunk.js"
   ]
 }
