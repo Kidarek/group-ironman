@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/group-ironman/static/css/main.dec559d6.chunk.css",
-    "main.js": "/group-ironman/static/js/main.32e96368.chunk.js",
-    "main.js.map": "/group-ironman/static/js/main.32e96368.chunk.js.map",
+    "main.css": "/group-ironman/static/css/main.0bf11768.chunk.css",
+    "main.js": "/group-ironman/static/js/main.2074c61a.chunk.js",
+    "main.js.map": "/group-ironman/static/js/main.2074c61a.chunk.js.map",
     "runtime-main.js": "/group-ironman/static/js/runtime-main.7f90c0e2.js",
     "runtime-main.js.map": "/group-ironman/static/js/runtime-main.7f90c0e2.js.map",
-    "static/js/2.bd47fff7.chunk.js": "/group-ironman/static/js/2.bd47fff7.chunk.js",
-    "static/js/2.bd47fff7.chunk.js.map": "/group-ironman/static/js/2.bd47fff7.chunk.js.map",
+    "static/js/2.cb7a7602.chunk.js": "/group-ironman/static/js/2.cb7a7602.chunk.js",
+    "static/js/2.cb7a7602.chunk.js.map": "/group-ironman/static/js/2.cb7a7602.chunk.js.map",
     "index.html": "/group-ironman/index.html",
-    "static/css/main.dec559d6.chunk.css.map": "/group-ironman/static/css/main.dec559d6.chunk.css.map",
-    "static/js/2.bd47fff7.chunk.js.LICENSE.txt": "/group-ironman/static/js/2.bd47fff7.chunk.js.LICENSE.txt"
+    "static/css/main.0bf11768.chunk.css.map": "/group-ironman/static/css/main.0bf11768.chunk.css.map",
+    "static/js/2.cb7a7602.chunk.js.LICENSE.txt": "/group-ironman/static/js/2.cb7a7602.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7f90c0e2.js",
-    "static/js/2.bd47fff7.chunk.js",
-    "static/css/main.dec559d6.chunk.css",
-    "static/js/main.32e96368.chunk.js"
+    "static/js/2.cb7a7602.chunk.js",
+    "static/css/main.0bf11768.chunk.css",
+    "static/js/main.2074c61a.chunk.js"
   ]
 }
