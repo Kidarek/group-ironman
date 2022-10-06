@@ -1,16 +1,14 @@
 import * as React from 'react';
 import './App.css';
-import PlayerStats from './Components/PlayerStats';
+import IronmanGroup from './Components/IronmanGroup';
 
 function App() {
+  let lustArgMaidPlayers = ['RangingThief', 'ArgonianLord', 'LustyLesbian']
+  let hogCrankers = ['Hog Narb', 'DaddyScoob', 'CrankinScary']
   return (
     <div className="App">
-      <PlayerStats name = 'RangingThief'></PlayerStats>
-      <PlayerStats name = 'ArgonianLord'></PlayerStats>
-      <PlayerStats name = 'LustyLesbian'></PlayerStats>
-      <PlayerStats name = 'Hog Narb'></PlayerStats>
-      <PlayerStats name = 'DaddyScoob'></PlayerStats>
-      <PlayerStats name = 'CrankinScary'></PlayerStats>
+      <IronmanGroup name = 'LustyArgMaid' players = {lustArgMaidPlayers} group_id="group-31486"></IronmanGroup>
+      <IronmanGroup name = 'HogCrankers' players = {hogCrankers} group_id = "group-22776"></IronmanGroup>
     </div>
   );
 }

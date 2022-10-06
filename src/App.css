@@ -52,3 +52,19 @@ table img {
 div.App table tbody {
   padding: 12px;
 }
+
+.ironman-group {
+   display: inline-block;
+}
+
+table td.css-1ijrop1-MuiTableCell-root {
+  padding: 10px;
+}
+
+th.groupName {
+  text-align: right;
+}
+
+th.groupPage {
+  text-align: left;
+}
