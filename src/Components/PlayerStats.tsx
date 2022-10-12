@@ -167,7 +167,7 @@ function PlayerStats(props: PlayerProps): JSX.Element {
                 </TableRow>
                 <TableRow>
                     <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Firemaking_icon.png'/> Firemaking</TableCell>
-                    <TableCell><Tooltip title= {"Experience: " + stats.cooking.experience.toLocaleString()}><div>{stats.cooking.level}</div></Tooltip></TableCell>
+                    <TableCell><Tooltip title= {"Experience: " + stats.firemaking.experience.toLocaleString()}><div>{stats.firemaking.level}</div></Tooltip></TableCell>
                 </TableRow>
                 <TableRow>
                     <TableCell><img src='https://shane-osrs-groupironman.s3.amazonaws.com/Woodcutting_icon.png'/> Woodcutting</TableCell>
