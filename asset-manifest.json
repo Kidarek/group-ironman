@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/group-ironman/static/css/main.02e49e31.chunk.css",
-    "main.js": "/group-ironman/static/js/main.58acf886.chunk.js",
-    "main.js.map": "/group-ironman/static/js/main.58acf886.chunk.js.map",
+    "main.js": "/group-ironman/static/js/main.2d7791e8.chunk.js",
+    "main.js.map": "/group-ironman/static/js/main.2d7791e8.chunk.js.map",
     "runtime-main.js": "/group-ironman/static/js/runtime-main.7f90c0e2.js",
     "runtime-main.js.map": "/group-ironman/static/js/runtime-main.7f90c0e2.js.map",
     "static/js/2.cb7a7602.chunk.js": "/group-ironman/static/js/2.cb7a7602.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.7f90c0e2.js",
     "static/js/2.cb7a7602.chunk.js",
     "static/css/main.02e49e31.chunk.css",
-    "static/js/main.58acf886.chunk.js"
+    "static/js/main.2d7791e8.chunk.js"
   ]
 }
