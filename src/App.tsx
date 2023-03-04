@@ -3,7 +3,7 @@ import './App1.css';
 import IronmanGroup from './Components/IronmanGroup';
 
 function App() {
-  let lustArgMaidPlayers = ['RangingThief', 'ArgonianLord', 'LustyLesbian']
+  let lustArgMaidPlayers = ['RangingThief', 'ArgonianLord', 'LustyLesbian', 'LustyKiwi']
   let hogCrankers = ['Hog Narb', 'DaddyScoob', 'CrankinScary']
   return (
     <div className="App">
